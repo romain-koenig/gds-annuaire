@@ -5,4 +5,12 @@ for card in data
 			.card-body
 				h5.card-title #{card.name}
 				p.card-text
-					| Métier : #{card.xprofile.groups[0].fields[3].value.raw}
+					| Métier : #{card.xprofile.groups[0].fields[3].value.unserialized}
+					br
+					| Nom commercial : #{card.xprofile.groups[0].fields[0].value.unserialized}
+					br
+					| Secteur d'activité : #{card.xprofile.groups[0].fields[2].value.unserialized}
+					br
+					| Tel. : #{card.xprofile.groups[0].fields[4].value.unserialized}
+
+					
