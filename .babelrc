@@ -1,0 +1,11 @@
+{
+  "presets": [ "env" ],
+  "ignore": [
+    "lib/public/js/**"
+  ],
+  "plugins": [
+    ["transform-runtime", {
+      "regenerator": true
+    }]
+  ]
+}

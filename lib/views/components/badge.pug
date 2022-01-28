@@ -1,0 +1,24 @@
+div
+    span.badge.bg-primary Primary
+    span.badge.bg-secondary Secondary
+    span.badge.bg-success Success
+    span.badge.bg-danger Danger
+    span.badge.rounded-pill.bg-warning.text-dark Warning
+    span.badge.rounded-pill.bg-info.text-dark Info
+    span.badge.rounded-pill.bg-light.text-dark Light
+    span.badge.rounded-pill.bg-dark Dark
+div 
+    button.btn.btn-primary(type='button')
+        | Notifications 
+        span.badge.bg-secondary 4
+div
+    button.btn.btn-primary.position-relative(type='button')
+        | Inbox
+        span.position-absolute.top-0.start-100.translate-middle.badge.rounded-pill.bg-danger
+            | 99+
+            span.visually-hidden unread messages
+div 
+    button.btn.btn-primary.position-relative(type='button')
+        | Profile
+        span.position-absolute.top-0.start-100.translate-middle.p-2.bg-danger.border.border-light.rounded-circle
+            span.visually-hidden New alerts

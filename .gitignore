@@ -1,0 +1,10 @@
+.tmp
+node_modules
+
+*~
+*#
+.DS_STORE
+Thumbs.db
+npm-debug.log
+
+/dist
