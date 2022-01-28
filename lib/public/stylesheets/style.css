@@ -10,29 +10,38 @@
 
 /* Color palette */
 :root {
-	--pr-primary: #0C3A6C;
-	--pr-secondary: #75A6D4;
-	--pr-background: #f5f5f5;
+	--gds-primary: #ee7d00;
+	--gds-secondary: #00a3b4;
+	--gds-text: #415161;
+	--gds-title: #2c3e50;
+	--gds-border: #e2e7ed;
+	--gds-background: #f8f9fb;
   }
 
 body, p {
   /* padding: 50px; */
   font: 14px "Roboto", Helvetica, Arial, sans-serif;
-  color: var(--pr-primary);
+  color: var(--gds-text);
 }
 
 h1 {
 	font-family: "Roboto Bold";
+	color: var(--gds-title);
 }
   
 h2, h3, h4, h5, h6 {
 	font-family: "Roboto";
+	color: var(--gds-title);
 }
 
 .bg-light-pr {
-	background-color: var(--pr-background);
+	background-color: var(--gds-background);
 }
 
+.card-title {
+	color: var(--gds-primary);
+	font-weight: 600;
+}
 
 .card-img-top {
 	border-radius: 50%;
