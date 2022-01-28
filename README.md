@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8faa5576-b535-4a2e-80dc-dfbfe7cd56bd/deploy-status)](https://app.netlify.com/sites/annuaire-gds/deploys)
+
 # POC of gds-annuaire
 
 This project is Proof of Concept of GDS Annuaire
