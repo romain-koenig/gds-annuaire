@@ -23,3 +23,10 @@ Start developpment with `npm run dev`
 # Want to launch in production?
 
 Start production environment with `npm run start`
+
+# Todo
+
+- Add pagination
+- Add more visible fields
+- Find great card UI
+- Create unique profile page type
