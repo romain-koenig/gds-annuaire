@@ -1,16 +1,25 @@
-for card in data
+for user in data
 	.col
-		a(href=card.link style="text-decoration:none").card.h-100.shadow
-			img.card-img-top(src=card.avatar_urls.full alt='Card image')
+		.card.h-100.shadow
+			img.card-img-top(src=user.avatar.full alt='Card image')
 			.card-body
-				h5.card-title #{card.name}
+				a(href=user.serre_url style="text-decoration:none")
+					center
+						h5.card-title #{user.name}
+						h6.card-subtitle.mb-2.text-muted @#{user.tag_name}
 				p.card-text
-					| Métier : #{card.xprofile.groups[0].fields[3].value.unserialized}
+					| Métier : #{user.custom_fields.trade}
 					br
-					| Nom commercial : #{card.xprofile.groups[0].fields[0].value.unserialized}
+					| Nom commercial : #{user.custom_fields.commercial_name}
 					br
-					| Secteur d'activité : #{card.xprofile.groups[0].fields[2].value.unserialized}
+					| Secteur d'activité : #{user.custom_fields.category}
 					br
-					| Tel. : #{card.xprofile.groups[0].fields[4].value.unserialized}
-
+					| Tel. : 
+					a(href=`tel:${user.custom_fields.phone}`) #{user.custom_fields.phone}
+					br
+					| Mail : 
+					a(href=`mailto:${user.custom_fields.mail}`) #{user.custom_fields.mail}
+					br
+					| Site internet : 
+					a(href=user.custom_fields.website) #{user.custom_fields.website}
 					
