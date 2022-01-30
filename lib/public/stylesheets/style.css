@@ -20,7 +20,7 @@
 
 body, p {
   /* padding: 50px; */
-  font: 14px "Roboto", Helvetica, Arial, sans-serif;
+  font: 16px "Roboto", Helvetica, Arial, sans-serif;
   color: var(--gds-text);
 }
 
